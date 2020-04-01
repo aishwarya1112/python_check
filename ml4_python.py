@@ -1,8 +1,8 @@
 import random
 
-Ans_LIST = ["apple", "banana", "grapes", "watermelon", "strawberry"]
-random.shuffle(Ans_LIST)
-Answer = list(Ans_LIST[0])
+ANS_LIST = ["apple", "banana", "grapes", "watermelon", "strawberry"]
+random.shuffle(ANS_LIST)
+Answer = list(ANS_LIST[0])
 
 Disp = []
 USED = []
@@ -22,7 +22,7 @@ while Count < len(Answer):
     print(Count)
 
     for i in range(len(Answer)):
-        if ANSWER[i] == GUESS and GUESS in USED:
+        if Answer[i] == GUESS and GUESS in USED:
             Disp[i] = GUESS
             Count = Count + 1
             USED.remove(GUESS)
