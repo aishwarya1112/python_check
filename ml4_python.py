@@ -1,3 +1,4 @@
+'''python code for hungman code'''
 import random
 
 ANS_LIST = ["apple", "banana", "grapes", "watermelon", "strawberry"]
