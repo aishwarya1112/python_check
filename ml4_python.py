@@ -2,29 +2,29 @@ import random
 
 ANS_LIST = ["apple", "banana", "grapes", "watermelon", "strawberry"]
 random.shuffle(ANS_LIST)
-Answer = list(ANS_LIST[0])
+ANSWER = list(ANS_LIST[0])
 
 DISP = []
 USED = []
-DISP.extend(Answer)
+DISP.extend(ANSWER)
 USED.extend(DISP)
 
 for i in range(len(DISP)):
-    Disp[i] = "_"
+    DISP[i] = "_"
 
 print(' '.join(DISP))
 print()
-Count = 0
+COUNT = 0
 
-while Count < len(Answer):
+while COUNT < len(ANSWER):
     GUESS = input("Please guess the name of fruit: ")
     GUESS = GUESS.lower()
-    print(Count)
+    print(COUNT)
 
-    for i in range(len(Answer)):
-        if Answer[i] == GUESS and GUESS in USED:
+    for i in range(len(ANSWER)):
+        if ANSWER[i] == GUESS and GUESS in USED:
             DISP[i] = GUESS
-            Count = Count + 1
+            COUNT = COUNT + 1
             USED.remove(GUESS)
 
 
